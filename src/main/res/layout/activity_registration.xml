@@ -15,6 +15,7 @@
         android:text="Регистрация"
         android:textColor="@color/black"
         android:textSize="40dp"
+        android:layout_marginTop="30dp"
         android:textStyle="bold">
     </TextView>
 
@@ -27,25 +28,8 @@
         android:textStyle="bold">
     </TextView>
 
-    <ImageView
-        android:id="@+id/add_foto"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:src="@drawable/index"
-        android:layout_marginTop="5dp">
-    </ImageView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Нажмите, чтобы добавить фото"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:textSize="13dp"
-        android:textStyle="bold">
-    </TextView>
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tit_phone"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -53,8 +37,7 @@
         android:layout_marginEnd="32dp"
         android:hint="Введите свое ФИО"
         app:boxBackgroundMode="outline"
-        app:endIconMode="clear_text"
-        app:helperText="">
+        app:endIconMode="clear_text">
 
         <EditText
             android:id="@+id/text_fio"
@@ -68,6 +51,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tit_fio"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -90,6 +74,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tit_email"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -111,7 +96,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:id="@+id/tit_password"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -133,6 +119,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/regUser"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:text="Зарегистрировать"
@@ -153,7 +140,7 @@
         android:text="Есть аккаунт? Войдите"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:textSize="18dp"
         android:textStyle="bold">
     </TextView>
