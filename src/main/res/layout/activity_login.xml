@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="#fff"
     android:gravity="center_horizontal"
-    tools:context=".LoginActivity">
+    tools:context=".Authentication.LoginActivity">
 
     <ImageView
         android:layout_width="415dp"
@@ -36,6 +36,7 @@
     </TextView>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titEmail"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         app:helperText="">
 
         <EditText
-            android:id="@+id/text_login"
+            android:id="@+id/atLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -59,6 +60,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titPassword"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -71,7 +73,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text_password"
+            android:id="@+id/atPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword">
@@ -92,6 +94,7 @@
     </TextView>
 
     <Button
+        android:id="@+id/login"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:text="Войти"
